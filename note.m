@@ -6,7 +6,7 @@ Ts = 1/Fs;
 A4=440;
 ref_key=49;     %A4 is the 49th Key in piano keyboard 
 n = keynum-ref_key;  %Calculate the difference between ref_key and input Key
-freq = A4*2^(n/12); %Calculate the frequency of input Key
+freq = A4*2^(n/ 2); %Calculate the frequency of input Key
 Time = 0:Ts:dur;
 
 noteX=A*sin(2*pi*freq*Time);
